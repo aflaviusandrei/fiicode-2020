@@ -1,0 +1,89 @@
+/*
+
+body{
+  background: url(bg.png) no-repeat center center fixed;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family:'Roboto';
+}
+
+.titles
+{
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  -webkit-text-stroke:0.01rem;
+  padding: 5rem 0 0 3rem;
+  letter-spacing: 3.4rem;
+}
+.CountdownContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  background: transparent;
+  border: 1px solid rgb(212, 192, 192)212, 192, 192);
+  padding: 10px;
+  box-shadow: 0 0 5px 3px #bbb;
+  border-spacing: 30px;
+}
+.info{
+  font-size: 5rem;
+}
+.info-bold{
+  font-size: 7rem;
+  -webkit-text-stroke: 0.5rem;
+} 
+.padding{
+  padding: 0 0.3rem 0 0.3rem;
+  color: white;
+}
+
+
+*/
+
+body
+{
+  background: url(bg.png) no-repeat center center fixed;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family:'Roboto';
+}
+
+.titles
+{
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  -webkit-text-stroke:0.01vw;
+  padding: 5vh 0 0 3vh;
+  letter-spacing: 3.4vw;
+}
+.CountdownContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  background: transparent;
+  border: 1px solid rgb(212, 192, 192)212, 192, 192);
+  padding: 2vw;
+  box-shadow: 0 0 5px 3px #bbb;
+  border-spacing: 3vw;
+}
+.info{
+  font-size: 5vw;
+}
+.info-bold{
+  font-size: 7vw;
+  -webkit-text-stroke: 0.5vw;
+} 
+.padding{
+  padding: 0 0.3vw 0 0.3vw;
+  color: white;
+}

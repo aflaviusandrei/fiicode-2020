@@ -1,0 +1,27 @@
+{
+  "header": {
+    "title1": "Exact ca în orice altă artă",
+    "title2": "ÎNCREDEREA VINE ODATĂ CU EXPERIENȚA",
+    "title3": "Finala FIICode 2020 va avea loc în perioada 28-30 August!",
+    "register": "ÎNSCRIE-TE ACUM",
+    "banner-info": "Urmăriți site-ul pentru mai multe detalii!"
+  },
+  "header-description": {
+    "text1": "<2>FIICode</2> este un proiect organizat de <2>ASII</2> și de <5>Facultatea de Informatică din Iași</5>, ce are la bază dezvoltarea abilităților pe partea de programare la nivel competitiv.",
+    "text2": "Fiind la a 4-a ediție, acesta are o arie largă ce cuprinde <1> web & mobile development</1>, <3>game development</3> și <5>algorithmics</5>.",
+    "text3": "Tema, la fel ca și cele din ultimii 4 ani, va fi una îndrăzneață, creativă, menită să scoată tot ce este mai bun din voi.",
+    "text4": "Ambiția și spiritul competitiv vor fi calitătile esențiale de care veți avea nevoie pentru a vă număra printre învingători."
+  },
+  "about": {
+    "title": "Despre",
+    "text1": "Proiectul dorește ca participanții să valorifice abilitățile (și să dezvolte competențe), prin intermediul competiției: gândirea algoritmică și analitică, modelarea și implementarea, dezvoltarea de noi tehnologii, creativitatea, adaptabilitatea, precum și capacitatea de a susține în public a unei lucrări proprii.Cele 3 secțiuni, Algoritmică, Web / Mobile și GameDev, sunt concepute special pentru acest lucru, fiecare acoperind o anumită arie din domeniul IT aflată în acest moment în plină expansiune.Modul de organizare al competiției implică cunoașterea atât de noțiuni practice cât și teoretice. ",
+    "text2": "Subiectele și soluțiile sunt propuse de o comisie formată din reprezentanți ai unor companii de prestigiu din industrie, de profesori universitari, preuniversitari și de studenți ai Facultății de Informatică.Evaluarea la secțiunea de algoritmică va fi făcută online, iar evaluarea în cadrul probelor Web / Mobile și GameDev va fi realizată de către comisie, fiecare secțiune având un regulament propriu. "
+  },
+  "letter": " Competiția ta IT preferată revine! Anul acesta fii pregătit pentru o ediție mai bună și mai mare ca niciodată!Stai aproape pentru informații și date suplimentare!",
+  "news": {
+    "a1": {
+      "title": "Echipa FIICode vine cu un anunț important!",
+      "content": "Din cauza situației actuale și a răspândirii virusului, echipa organizatorică a hotărât că cea mai bună decizie este amânarea finalei din weekendul 8-10 mai pe termen nedeterminat. Vă asigurăm că vom anunța cu cel puțin două luni înainte o dată exactă la care ne putem relua activitatea on-site. Rundele online se vor desfășura în continuare la fel, în condiții normale, iar la ariile Web&Mobile și Game Dev se vor prelungi încă trei săptămâni, deadline-urile fiind 17 Aprilie pentru Web&Mobile și 2 mai pentru Game Dev. Vom ruga participanții să își încarce progresul pe GitHub, într-un repository public, pentru o bună evaluare a progresului. Cei care încă nu au trimis un link către repository-ul lor sunt invitați să ne trimită pe Facebook/Instagram. Vom reveni ulterior cu detalii despre demo-urile video. Echipa FIICode vă urează sănătate și aveți grijă!"
+    }
+  }
+}

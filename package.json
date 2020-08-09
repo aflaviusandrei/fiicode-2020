@@ -1,0 +1,51 @@
+{
+  "name": "fiicode-2019",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "build-emails": "babel-node emails/index",
+    "build-emails:watch": "nodemon  -e js,jsx --exec \"npm run build-emails\"",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "static": "npm run build && npm run export",
+    "export": "next export -o dist",
+    "eslint:fix": "eslint --ext .jsx,.js ./ --fix",
+    "svg-icons": "svgo --config public/assets/svg/svgo-icons.config.json -f public/assets/svg/icons&& svgr --ext jsx --icon --no-svgo --tab-width 4 -d components/svg/icons public/assets/svg/icons&& create-index components/svg/icons --extensions js jsx",
+    "svg-imgs": "svgo --config public/assets/svg/svgo-imgs.config.json -f public/assets/svg/imgs&& svgr --ext jsx --no-svgo --keep-useless-defs --tab-width 4 -d components/svg/imgs public/assets/svg/imgs",
+    "svg-imgs-unstyled": "svgo --config public/assets/svg/svgo-icons.config.json -f public/assets/svg/imgs-unstyled&& svgr --ext jsx --no-svgo --tab-width 4 -d components/svg/imgs public/assets/svg/imgs-unstyled"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@svgr/core": "^4.1.0",
+    "@svgr/webpack": "^4.3.3",
+    "axios": "^0.19.0",
+    "create-index": "^2.5.0",
+    "express": "^4.17.1",
+    "i18next": "^19.1.0",
+    "imagemin-optipng": "^7.1.0",
+    "js-cookie": "^2.2.1",
+    "next-i18next": "^4.1.0",
+    "next-optimized-images": "^2.5.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-final-form": "^6.3.3",
+    "react-html-email": "^3.0.0",
+    "react-markdown": "^4.2.2",
+    "styled-components": "^4.4.0",
+    "svgo": "^1.1.1",
+    "svgr": "^1.9.2",
+    "uniqid": "^5.0.3",
+    "url-loader": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
+    "next": "^9.1.5",
+    "raw-loader": "^4.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "header": {
+    "title1": "Just like in any other art",
+    "title2": "CONFIDENCE COMES WITH EXPERIENCE",
+    "title3": "THE FINAL ROUND WILL TAKE PLACE ON BETWEEN THE 28TH AND 30TH OF AUGUST</1>",
+    "register": "REGISTER NOW",
+    "banner-info": "Check the website soon for more details."
+  },
+  "header-description": {
+    "text1": "<2>FIICode</2> is a project organised by <2>ASII</2> and <5>Faculty of Computer Science Iași</5>, which specialises in skill development in programming at a competitive level.",
+    "text2": "This being the 4th edition, the project has a wide area of interests, like <1> web & mobile development</1>, <3>game development</3> and <5>algorithmics</5>.",
+    "text3": "The theme, like in the last 4 years, will be daring, creative, meant to get the best out of you.",
+    "text4": "Ambition and competitive spirit will be essential qualities you will need to be amongst the winners."
+  },
+  "about": {
+    "title": "About",
+    "text1": "The project wishes that every competitor capitalizes on their strenghts (and develops skills) throughout the competition: analitic and algorithmic thinking, modeling and implementation, development of new technologies, creativity, adaptability and the capacity to present their work to a public.The 3 sections, Algorithmics, Web / Mobile and GameDev, are specially made because each one of them covers IT domains that are in full expansion nowadays.For this competition you will need to know practical and theoretical notions.",
+    "text2": "The subjects and solutions are suggested by a committee formed by representative of prestigious companies in IT, university and high school professors and students from the Faculty of Computer Science.Evaluation at the algorithmics sections will be done online, while in the other 2 sections, evaluation will be done by the committee, every section having its own rules."
+  },
+  "letter": "Your favorite IT competition is back! This year be prepared for a better and bigger edition than ever! Stay tuned to additional information and data!",
+  "news": {
+    "a1": {
+      "title": "The FIICode organizing team has a new announcement for you!",
+      "content": "Due to the current situation and the unfortunate spread of the COVID-19 virus, the organizing team has decided that, in our participant’s best interest, the final on-site round will be postponed. We assure you that we will announce an exact date at least two months prior. The online rounds will continue, mentioning that we decided to extend them until the 17th of April for Web&Mobile and the 2nd of May for GameDev. We ask our participants to upload their progress on GitHub, in a public repository. The ones that haven’t sent us a link to their repository yet are asked to do so on Facebook or Instagram. We will make another announcement soon regarding the video demos. The FIICode team wishes everybody well and take care!"
+    }
+  }
+}
