@@ -44,29 +44,52 @@ const PostActionsLike = styled.div`
 
 const PostActionsLikesCount = styled.div``;
 
-const Post = ({ title, description, likesCount, t }) => {
-  return (
-    <PostContainer>
-      <PostTitle>
-        {title || 'Au început înscrierile!'}
-      </PostTitle>
-      <PostDescription>
-        {description ||
-          `S-a dat startul înscrierilor pentru fiecare dintre cele trei
-          arii (Web/Mobile, Algoritmică și Game Development). Vă puteți înregistra apăsând pe butonul
-          de mai sus!`}
-      </PostDescription>
-      <PostActions>
-        <PostActionsLike>
-          <HeartIcon />
-          <span>{t('like.action')}</span>
-        </PostActionsLike>
-        <PostActionsLikesCount>
-          {likesCount || 12} {t('like.status')}
-        </PostActionsLikesCount>
-      </PostActions>
-    </PostContainer>
-  );
+const Post = ({ title, description, likesCount, t, type, complexContent }) => {
+  if (type != "complex") {
+    return (
+      <PostContainer>
+        <PostTitle>
+          {title || 'Au început înscrierile!'}
+        </PostTitle>
+        <PostDescription>
+          {description ||
+            `S-a dat startul înscrierilor pentru fiecare dintre cele trei
+            arii (Web/Mobile, Algoritmică și Game Development). Vă puteți înregistra apăsând pe butonul
+            de mai sus!`}
+        </PostDescription>
+        <PostActions>
+          <PostActionsLike>
+            <HeartIcon />
+            <span>{t('like.action')}</span>
+          </PostActionsLike>
+          <PostActionsLikesCount>
+            {likesCount || 12} {t('like.status')}
+          </PostActionsLikesCount>
+        </PostActions>
+      </PostContainer>
+    );
+  }
+  else {
+    return(
+      <PostContainer>
+          <PostTitle>
+      {title || 'Au început înscrierile!'}
+    </PostTitle>
+          <PostDescription>
+      {complexContent}
+    </PostDescription>
+          <PostActions>
+      <PostActionsLike>
+        <HeartIcon />
+        <span>{t('like.action')}</span>
+      </PostActionsLike>
+      <PostActionsLikesCount>
+        {likesCount || 12} {t('like.status')}
+      </PostActionsLikesCount>
+    </PostActions>
+        </PostContainer>
+    )
+  }
 };
 
 export default withTranslation('post')(Post);

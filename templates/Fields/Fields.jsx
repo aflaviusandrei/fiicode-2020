@@ -41,7 +41,7 @@ const FieldSmallInfoContainer = styled.div`
   `}
 `;
 
-const Fields = ({ config, t, i18n }) => {
+const Fields = ({ config, t, i18n, extra }) => {
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
   const mdBody = (() => {
     switch (selectedTabIndex) {
@@ -74,6 +74,7 @@ const Fields = ({ config, t, i18n }) => {
           <hr />
         </FieldSmallInfoContainer>
         <ReactMarkdown source={mdBody} />
+        {extra}
       </FieldContainerStyled>
       <FieldTabSelectors
         onSelect={setSelectedTabIndex}

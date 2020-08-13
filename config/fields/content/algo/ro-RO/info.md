@@ -19,7 +19,3 @@ Link către a doua rundă: https://csacademy.com/contest/fii-code-2020-round-2
 ## Anunt proba 3
 
 A treia rundă va avea loc pe 13 Martie.
-
-## Anunt proba finală
-
-Proba finală va avea loc în perioada 28-30 August!

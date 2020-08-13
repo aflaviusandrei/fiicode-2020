@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Post from '../../../../components/Post/Post';
 import media from 'styles/media';
 import { withTranslation } from 'translations';
+import i18next from 'i18next';
 
 const NewsFeed = styled.div`
   background-color: ${({ theme }) => theme.colors.beige};
@@ -103,35 +104,114 @@ const NewsFeedContentRightSideBottom = styled.div`
 `;
 
 const HomeNewsFeed = ({ t }) => {
-  return (
-    <NewsFeed>
-      <NewsFeedHeaderSubtitle></NewsFeedHeaderSubtitle>
-      <NewsFeedHeader>Newsfeed</NewsFeedHeader>
-      <NewsFeedContent>
-        {/* <Post title={t('news.a1.title')} description={t('news.a1.content')} /> */}
-        <Post
-          title="Finala FIICode 2020 va avea loc în perioada 28-30 August!"
-          description="În curând vom reveni cu mai multe detalii."
-        />
-      </NewsFeedContent>
-      <NewsFeedContent>
-        <Post title={t('news.a1.title')} description={t('news.a1.content')} />
-        <Post
-          title="S-a postat tema pentru Web/Mobile 2020!"
-          description="Pentru mai multe informatii vizitati sectiunea ariei! 
-        https://fiicode.asii.ro/web-mobile"
-        />
-      </NewsFeedContent>
-      <NewsFeedContent>
-        <Post
-          title="S-a postat tema pentru GameDev 2020!"
-          description="Pentru mai multe informatii vizitati sectiunea ariei! 
-        https://fiicode.asii.ro/gamedev"
-        />
-        <Post />
-      </NewsFeedContent>
-    </NewsFeed>
-  );
+  if (i18next.language == "en-US") {
+    return (
+      <NewsFeed>
+        <NewsFeedHeaderSubtitle></NewsFeedHeaderSubtitle>
+        <NewsFeedHeader>Newsfeed</NewsFeedHeader>
+        <NewsFeedContent>
+          {/* <Post title={t('news.a1.title')} description={t('news.a1.content')} /> */}
+          <Post
+            title="The FIICode Final will take place between the 28th and 30th of August!"
+            type="complex"
+            complexContent={
+              <div>
+                <h3>Friday, 28 August</h3>
+                <ul>
+                <li>17:00 - 17:30 : Opening Ceremony</li>
+                <li>17:30 - 18:15 : Diamond Partner presentation and quiz</li>
+                <li>18:15 - 19:30 : Live Library</li>
+                </ul>
+                <h3>Saturday, 29 August</h3>
+                <ul>
+                <li>10:00 - 18:00 : Web/Mobile & Game Dev Contest</li>
+                <li>16:00 - 18:00 : Algorithmic Contest</li>
+                <li>18:00 - 19:00 : Web/Mobile & Game Dev Presentation</li>
+                </ul>
+                <h3>Sunday, 30 August</h3>
+                <ul>
+                <li>14:00 - 14:45 : Diamond Partner presentation and quiz</li>
+                <li>14:45 - 15:00 : Gold Partner Presentation</li>
+                <li>15:00 : Award Ceremony</li>
+                </ul>
+              </div>
+            }
+            description="În curând vom reveni cu mai multe detalii."
+          />
+        </NewsFeedContent>
+        <NewsFeedContent>
+          <Post title={t('news.a1.title')} description={t('news.a1.content')} />
+          <Post
+            title="S-a postat tema pentru Web/Mobile 2020!"
+            description="Pentru mai multe informatii vizitati sectiunea ariei! 
+          https://fiicode.asii.ro/web-mobile"
+          />
+        </NewsFeedContent>
+        <NewsFeedContent>
+          <Post
+            title="S-a postat tema pentru GameDev 2020!"
+            description="Pentru mai multe informatii vizitati sectiunea ariei! 
+          https://fiicode.asii.ro/gamedev"
+          />
+          <Post />
+        </NewsFeedContent>
+      </NewsFeed>
+    );
+  }
+  else {
+    return (
+      <NewsFeed>
+        <NewsFeedHeaderSubtitle></NewsFeedHeaderSubtitle>
+        <NewsFeedHeader>Newsfeed</NewsFeedHeader>
+        <NewsFeedContent>
+          {/* <Post title={t('news.a1.title')} description={t('news.a1.content')} /> */}
+          <Post
+            title="Finala FIICode 2020 va avea loc în perioada 28-30 August!"
+            type="complex"
+            complexContent={
+              <div>
+                <h3>Vineri, 28 August</h3>
+                <ul>
+                <li>17:00 - 17:30 : Ceremonia de deschidere</li>
+                <li>17:30 - 18:15 : Prezentare Diamond Partner și quiz</li>
+                <li>18:15 - 19:30 : Live Library</li>
+                </ul>
+                <h3>Sâmbătă, 29 August</h3>
+                <ul>
+                <li>10:00 - 18:00 : Concurs Web/Mobile & Game Dev</li>
+                <li>16:00 - 18:00 : Algorithmic Contest</li>
+                <li>18:00 - 19:00 : Web/Mobile & Game Dev Presentation</li>
+                </ul>
+                <h3>Duminică, 30 August</h3>
+                <ul>
+                <li>14:00 - 14:45 : Prezentare Diamond Partner și quiz</li>
+                <li>14:45 - 15:00 : Prezentare Gold Partner</li>
+                <li>15:00 : Ceremonia de premiere</li>
+                </ul>
+              </div>
+            }
+            description="În curând vom reveni cu mai multe detalii."
+          />
+        </NewsFeedContent>
+        <NewsFeedContent>
+          <Post title={t('news.a1.title')} description={t('news.a1.content')} />
+          <Post
+            title="S-a postat tema pentru Web/Mobile 2020!"
+            description="Pentru mai multe informatii vizitati sectiunea ariei! 
+          https://fiicode.asii.ro/web-mobile"
+          />
+        </NewsFeedContent>
+        <NewsFeedContent>
+          <Post
+            title="S-a postat tema pentru GameDev 2020!"
+            description="Pentru mai multe informatii vizitati sectiunea ariei! 
+          https://fiicode.asii.ro/gamedev"
+          />
+          <Post />
+        </NewsFeedContent>
+      </NewsFeed>
+    );
+  }
 };
 
 export default withTranslation('home')(HomeNewsFeed);

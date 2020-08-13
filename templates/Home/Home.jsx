@@ -29,6 +29,7 @@ const Home = () => (
     <BeigeContainer>
       <HomeHeader />
       <HomeProjectDescription />
+      <iframe style={{margin: "30px auto 0 auto"}}src="https://discordapp.com/widget?id=741636267275452416&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </BeigeContainer>
 
     <HomeBlueSection categories={blueSectionCategories} />
